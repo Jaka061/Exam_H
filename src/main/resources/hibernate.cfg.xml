@@ -1,0 +1,15 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">jmladshaya03</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="show_sql">true</property>
+        <mapping class="org.example.entity.User"/>
+        <mapping class="org.example.entity.Posts"/>
+<!--        <mapping class="org.example.entity.Likes"/>-->
+
+    </session-factory>
+</hibernate-configuration>
